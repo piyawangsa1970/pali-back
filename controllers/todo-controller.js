@@ -13,14 +13,14 @@ exports.createTodo = AsynceHandler(async(req, res, next)=>{
 
 exports.getTodos = AsynceHandler(async(req, res, next)=>{
   res.status(200).json({
-    message:"New Topic created",
+    message:"successful",
     topics: await Topic.find({})
   })
 })
 
 exports.getTodo = AsynceHandler(async(req, res, next)=>{
   res.status(200).json({
-    message:"Get successful",
+    message:"successful",
     topics: await Topic.findById(req.params.id)
   })
 })
